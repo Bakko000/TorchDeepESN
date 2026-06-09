@@ -105,11 +105,13 @@ predictions = model.predict(test_features)
 # Cite
 
 If you use this code entirely or partially please cite the following:
-
+```text
 Gallicchio, Claudio, Alessio Micheli, and Luca Pedrelli. "Deep reservoir computing: A critical experimental analysis." Neurocomputing 268 (2017): 87-99.
+```
 
 and
 
+```text
 @inproceedings{baccheschidazzi2026,
   author    = {Corrado Baccheschi and Patrizio Dazzi},
   title     = {An Analysis of Untrained Deep Reservoir Networks for Audio Surveillance},
@@ -117,3 +119,4 @@ and
   year      = {2026},
   note      = {accepted, forthcoming}
 }
+```
