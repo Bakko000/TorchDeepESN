@@ -57,20 +57,19 @@ model = DeepESN(
     spectral_radius_hidden=0.9,
     input_scaling_hidden=1.0,
     leaky_hidden=1.0,
-    readout_regularizer=[0,1e-4,1e-3,1e-2,1,10,100],   # they will be used to regularize the readout !
-    type="nobi",
+    readout_regularizer=[0,1e-4,1e-3,1e-2,1,10,100],   # they will be used in sequence to find the best regularizer for the readout !
+    type="bi", # bidirectional or nobi
     score="accuracy",
     last_layer=False,
-    sequences=False,
+    sequences=False, # extracting the last state returning 2D tensor
     mean=False,
-    activation=torch.tanh
 )
 ```
 
 ## 1. Extract reservoir features
 
 ```text
-features, all_states = model(x)
+reservoir_states, all_states = model(x)
 ```
 
 ## 2. Train the readout 
@@ -80,10 +79,10 @@ For multiclassification, remember to give to the readout the onehot representati
 
 ```text
 val_error, fit_time_s, fit_time_ms = model.fit(
-    train=features,
+    train=reservoir_statest_train,
     labels=labels,
     num_targets=num_classes,
-    validation_data=(val_features, val_labels),
+    validation_data=(reservoir_statest_val, val_labels),
     verbose=True,
     device=cpu|cuda
 )
@@ -92,7 +91,7 @@ val_error, fit_time_s, fit_time_ms = model.fit(
 
 ## 3. Predict
 ```text
-predictions = model.predict(test_features)
+predictions = model.predict(test_data)
 ```
 ---
 
