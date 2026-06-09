@@ -1,8 +1,7 @@
 # Deep Reservoir Computing with Linear Readout for Audio Data
 
 A PyTorch implementation of **Deep Echo State Networks (DeepESN)** and related reservoir computing models, designed for efficient sequence representation with a **fixed recurrent backbone** and a **linear ridge readout**.
-Ref. paper: **C. Baccheschi, P. Dazzi, An Analysis of Untrained Deep Reservoir Networks for Audio Surveillance**, 2026.
-The code will be released upon acceptance to the AVSS conference.
+Ref. paper: **C. Baccheschi and P. Dazzi, “An Analysis of Untrained Deep Reservoir Networks for Audio Surveillance,”** in Proceedings of the IEEE International Conference on Advanced Video and Signal-Based Surveillance (AVSS), Lecce(Italy), 2026, forthcoming.
 
 This repository focuses on the following idea:
 
@@ -101,3 +100,20 @@ predictions = model.predict(test_features)
 -Prof. Claudio Gallicchio — original DeepESN formulation and deep reservoir computing research
 
 -Dr. Corrado Baccheschi — PyTorch implementation and extensions
+
+
+# Cite
+
+If you use this code entirely or partially please cite the following:
+
+Gallicchio, Claudio, Alessio Micheli, and Luca Pedrelli. "Deep reservoir computing: A critical experimental analysis." Neurocomputing 268 (2017): 87-99.
+
+and
+
+@inproceedings{baccheschidazzi2026,
+  author    = {Corrado Baccheschi and Patrizio Dazzi},
+  title     = {An Analysis of Untrained Deep Reservoir Networks for Audio Surveillance},
+  booktitle = {Proceedings of the IEEE International Conference on Advanced Video and Signal-Based Surveillance (AVSS)},
+  year      = {2026},
+  note      = {accepted, forthcoming}
+}
