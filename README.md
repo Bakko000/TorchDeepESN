@@ -115,7 +115,7 @@ and
 @inproceedings{baccheschidazzi2026,
   author    = {Corrado Baccheschi and Patrizio Dazzi},
   title     = {An Analysis of Untrained Deep Reservoir Networks for Audio Surveillance},
-  booktitle = {Proceedings of the IEEE International Conference on Advanced Video and Signal-Based Surveillance (AVSS)},
+  booktitle = {Proceedings of the IEEE International Conference on Advanced Visual and Signal-Based Systems (AVSS)},
   year      = {2026},
   note      = {accepted, forthcoming}
 }
