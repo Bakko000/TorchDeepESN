@@ -9,7 +9,7 @@ This repository focuses on the following idea:
 - keep the recurrent layers **untrained**;
 - train only a **linear readout**, making the approach particularly attractive for large-scale settings where full backpropagation through time may be expensive.
 
-The core implementation is provided in [`deepesn.py`](./DeepESN.py).
+The core implementation is provided in [`deepesn.py`](./deepesn.py).
 
 ---
 
