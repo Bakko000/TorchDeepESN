@@ -33,7 +33,6 @@ class DeepESN(nn.Module):
     
     author: Prof. Claudio Gallicchio (c.gallicch)   (originally in Keras/TF)
     edited and implemented in Pytorch by Dr. Corrado Baccheschi (Bakko000)
-    optimized by: Copilot
     
     Implements a Deep Echo State Network (DeepESN) model for time-series classification or regression problems.
     This model consists of:
